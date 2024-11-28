@@ -1,0 +1,130 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+body {
+  font-family: "Red Hat Text", sans-serif;
+  background-color: #fcf8f6;
+}
+
+.desert-container {
+  padding: 24px 24px 32px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+}
+.desert-container h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #260f08;
+  margin-bottom: 32px;
+}
+.item {
+  position: relative;
+}
+.item img {
+  margin-bottom: 32px;
+}
+.item button {
+  padding: 12.5px 28px;
+  border-radius: 999px;
+  border: 1px solid #ad8a85;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18.52px;
+  position: absolute;
+  left: 80px;
+  top: 188px;
+}
+.item i {
+  color: #c73b0f;
+  margin-right: 9.72px;
+}
+.item h3 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.52px;
+  color: #87635a;
+  margin-bottom: 4px;
+}
+.item h2 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.17px;
+  color: #260f08;
+  margin-bottom: 4px;
+}
+.item p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.17px;
+  color: #c73b0f;
+}
+.your-cart-container{
+  margin-inline: 24px;
+  margin-bottom: 24px;
+  padding: 24px 24px 40px;
+  background: white;
+}
+.your-cart-container h1 {
+font-size: 24px;
+font-weight: 700;
+line-height: 31.75px;
+color: #C73B0F;
+margin-bottom: 24px;
+}
+.your-cart-container img {
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+.your-cart-container p {
+font-size: 14px;
+font-weight: 600;
+line-height: 18.52px;
+text-align: center;
+color: #87635A;
+}
+@media only screen and (width >= 768px){
+  .desert-container {
+    padding: 40px 40px 32px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    row-gap: 32px;
+  }
+  .desert-container img{
+    width: 213px;
+    height: 213px;
+  }
+  .item button {
+    padding: 12.5px 28px;
+    left: 28px;
+    top: 188px;
+    cursor: pointer;
+  }
+}
+@media only screen and (width >= 1280px){
+  .all-in-container {
+    display: flex;
+  }
+  .desert-container {
+    padding: 88px 32px 88px 112px;
+  }
+  .desert-container img{
+    width: 250px;
+    height: 240px;
+  }
+  .your-cart-container{
+    margin: 88px 112px 0px 0px;
+    padding: 24px;
+    height: 100%;
+    border-radius: 12px;
+  }
+
+}
